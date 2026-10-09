@@ -22,7 +22,7 @@ export default function CrystalKizorLanding() {
     <>
     <PageMeta title="Crystal Kizor" description="Explore the work, ideas, and initiatives of Crystal Kizor — architect, designer, entrepreneur, speaker, researcher, and creator." />
 <header className="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
-<div className="h-20 max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between">
+<div className="h-20 max-w-7xl mx-auto md:px-margin-md lg:px-margin-lg flex items-center justify-between">
 <div className="flex items-center gap-space-md">
 <Link className="flex items-center gap-space-sm" data-path="spaces" href="/">
 <img alt="Crystal Kizor Monogram Mark" className="h-12 w-auto object-contain" src="/images/logo-bg-removed.png"/>
@@ -39,7 +39,7 @@ export default function CrystalKizorLanding() {
 <Link className="bg-primary text-on-primary hover:bg-secondary hover:text-on-secondary px-space-sm md:px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center" data-path="connect" href="#connect" onClick={closeMenu}>{"Work With Crystal"}</Link>
 <button aria-controls="mobile-navigation" aria-expanded={isMenuOpen} aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"} className="xl:hidden w-10 h-10 rounded-full border border-outline/40 text-primary flex items-center justify-center" onClick={() => setIsMenuOpen(!isMenuOpen)} type="button">
 {/* <span className="material-symbols-outlined text-[20px]">{isMenuOpen ? "close" : "menu"}</span> */}
-<img src="/svg/barcode.svg" alt="menu" className='w-5 h-5'/>
+<img src="/svg/barcode.svg" alt="menu" className='w-6 h-6'/>
 </button>
 
 </div>
