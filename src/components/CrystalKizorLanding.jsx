@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import InquiryForm from "./InquiryForm";
 import ScrollReveal from "./ScrollReveal";
+import PageMeta from "./PageMeta";
 
 export default function CrystalKizorLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +20,7 @@ export default function CrystalKizorLanding() {
 
   return (
     <>
+    <PageMeta title="Crystal Kizor" description="Explore the work, ideas, and initiatives of Crystal Kizor — architect, designer, entrepreneur, speaker, researcher, and creator." />
 <header className="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
 <div className="h-20 max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between">
 <div className="flex items-center gap-space-md">
@@ -30,7 +32,7 @@ export default function CrystalKizorLanding() {
 </div>
 <nav className="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold border-b border-primary">
 {navigationItems.map((item, index) => (
-<Link aria-current={index === 0 ? "page" : undefined} className={`font-label-md text-label-md uppercase tracking-wider transition-colors py-space-xs ${index === 0 ? "text-primary font-bold border-b border-primary" : "text-on-surface-variant hover:text-on-surface"}`} data-path={item.href.slice(1)} href={item.href} key={item.label}>{item.label}</Link>
+<Link aria-current={index === 0 ? "page" : undefined} className={`font-label-md text-label-md uppercase tracking-wider transition-colors py-space-xs ${0 ? "text-primary font-bold border-b border-primary" : "text-on-surface-variant hover:text-on-surface"}`} data-path={item.href.slice(1)} href={item.href} key={item.label}>{item.label}</Link>
 ))}
 </nav>
 <div className="flex items-center gap-space-sm">
