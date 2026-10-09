@@ -9,8 +9,8 @@ export default function CrystalKizorLanding() {
   const navigationItems = [
     
     { label: "About", href: "#about" },
-    { label: "Work", href: "#spaces" },
-    { label: "Speaking", href: "#speaking" },
+    { label: "Space", href: "#spaces" },
+    { label: "Learning", href: "#speaking" },
     { label: "Impact", href: "#impact" },
     { label: "Contact", href: "#connect" },
   ];
